@@ -22,11 +22,15 @@ input{
 
     padding: 5px;
     font-size: 15px;
+    margin: 7px 0 20px 0;
+    
 }
 
 h2{
+    width: 100%;
     font-size: 35px;
     color: var(--text-red);
+    text-align: center;
 }
 
 nav{
@@ -75,4 +79,27 @@ form{
     align-items: start;
     flex-flow: column;
     margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 20px 30px;
+    background-color: var(--bg-white);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+form div{
+    width: 100%;
+    
+}
+div label p{
+    display: inline;
+}
+
+.submit_button{
+    width: 80%;
+    margin: 5% 10%;
+    color: var(--text-red);
+    border: 3px solid var(--text-red);
+    background-color: var(--bg-white);
+    padding: 10px 0;
+    cursor: pointer;
 }

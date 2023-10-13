@@ -28,14 +28,15 @@
 
         <form action="#" method="post">
             <h2>Register</h2>
-            <input type="file">
+
             <div>
-                <p>Name </p>
+                <p class="form_input_label">Name </p>
                 <input type="text" placeholder="First name">
                 <input type="text" placeholder="Last name">
             </div>
             <div>
-                <p>Gender </p> 
+                <p class="form_input_label">Gender </p>
+                
                 <Label for="gender">
                     <input type="radio" name="gender" value="male">
                     <p>Male</p>
@@ -43,25 +44,52 @@
                 <Label for="gender">
                     <input type="radio" name="gender" value="female">
                     <p>Female</p>
-                </Label>
+                </Label> 
             </div>
             <div>
-                <p>Email</p>
+                <p class="form_input_label">Email</p>
                 <input type="email" placeholder="Enter your email">
             </div>
             <div>
-                <p>Mobile no</p>
+                <p class="form_input_label">Mobile no</p>
                 <input type="tel" placeholder="Mobile no">
             </div>
             <div>
-                <p>DOB</p> 
+                <p class="form_input_label">DOB</p> 
                 <input type="date" value="dob">
             </div>
             <div>
-                <p>Password</p>
+                <p class="form_input_label">Password</p>
                 <input type="password" placeholder="Enter your password">
             </div>
-            <input type="submit" >
+
+            <div>
+                <p class="form_input_label">Github profile url</p>
+                <input type="url" placeholder="Github profile url">
+            </div>
+
+            <div>
+                <p class="form_input_label">which time you are available for interview</p>
+                <input type="time" placeholder="Enter your password">
+            </div>
+
+            <div>
+                <p class="form_input_label">Country</p>
+                <input list="country">
+                    <datalist id="country">
+                        <option value="India">
+                        <option value="Nepal">
+                        <option value="China">
+                        <option value="Shree lanka">
+                        <option value="Bangladesh">
+                        <option value="Myanmar">
+                        <option value="Pakistan">    
+                    </datalist>
+            </div>
+
+            <div>
+                <input class="submit_button" type="submit" >
+            </div>
             <p>Already registered ? <a href="./login.html">Login</a></p>
         </form>
     </section>
