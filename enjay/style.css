@@ -15,6 +15,7 @@ body{
     --text-grey: #797979;
     --bg-white: #ffffff;
     --bg-grey: #f0f0f0;
+    --bg-grey-dark: #646262;
     --font-size-nav: 18px;
 }
 
@@ -102,4 +103,28 @@ div label p{
     background-color: var(--bg-white);
     padding: 10px 0;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+footer{
+    height: 100px;
+    background-color: var(--bg-grey-dark);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+footer p,a{
+    font-size: 20px;
+    display: inline;
+}
+
+.input_wd{
+    width: 100%;
+}
+
+.login_page{
+
+    justify-content: center;
 }
