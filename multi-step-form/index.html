@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Multi-step form</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+   <main>
+      <div class="register_form">
+        <aside>
+          <div class="sidebar_component">
+            <div class="sidebar_numbers"><p>1</p></div>
+            <div class="sidebar_text">
+              <p>STEP 1</p>
+              <P>YOUR INFO</P>
+            </div>
+          </div>
+
+          <div class="sidebar_component">
+            <div class="sidebar_numbers"><p>2</p></div>
+            <div class="sidebar_text">
+              <p>STEP 2</p>
+              <P>SELECT PLAN</P>
+            </div>
+          </div>
+
+          <div class="sidebar_component">
+            <div class="sidebar_numbers"><p>3</p></div>
+            <div class="sidebar_text">
+              <p>STEP 3</p>
+              <P>ADD-ONS</P>
+            </div>
+          </div>
+
+          <div class="sidebar_component">
+            <div class="sidebar_numbers"><p>4</p></div>
+            <div class="sidebar_text">
+              <p>STEP 4</p>
+              <P>SUMMARY</P>
+            </div>
+          </div>
+          
+            
+        </aside>
+        <form id="register_form" action="" method="post">
+              <section class="form_step">
+                
+                  <div>
+                    <h1 class="form_title_head">Personal info</h1>
+                    <p class="form_title_para">Please provide your name, email address, and phone number.</p>
+                  </div>
+
+                  <div>
+                    <p>Name</p>
+                    <input class="form_input" type="text" placeholder="e.g. Akshay kumar" autofocus>
+                  </div>
+
+                  <div>
+                    <p>Email address</p>
+                    <input class="form_input" type="email" placeholder="e.g. akshay@example.com" >
+                  </div>
+
+                  <div>
+                    <p>Phone number</p>
+                    <input class="form_input" type="tel" placeholder=" e.g. 934 567 8901">
+                  </div>
+
+              </section>
+
+              <section class="form_step">
+                <div>
+                  <h1 class="form_title_head">Select your plan</h1>
+                  <p class="form_title_para">You have the option of monthly or yearly billing.</p>
+                </div>
+
+              </section>
+
+              <section class="form_step">
+                <div>
+                  <h1 class="form_title_head">Select your plan</h1>
+                  <p class="form_title_para">You have the option of monthly or yearly billing.</p>
+                </div>
+
+              </section>
+
+              <section class="form_step">
+                <div>
+                  <h1 class="form_title_head">Select your plan</h1>
+                  <p class="form_title_para">You have the option of monthly or yearly billing.</p>
+                </div>
+
+              </section>
+
+              <div class="form_next_button_div">
+                <button id="back_btn" onclick="nextBackBtn(-1)">Go back</button>
+                <button id="next_btn" onclick="nextBackBtn(1)">Next step</button>
+              </div>
+        </form>
+       
+      </div>
+   </main>
+
+</body>
+</html>

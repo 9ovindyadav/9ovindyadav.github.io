@@ -22,9 +22,19 @@
 --magnolia: hsl(217, 100%, 97%);
 --alabaster: hsl(231, 100%, 99%);
 --white: hsl(0, 0%, 100%);
+
+--btn-width-desk:7em;
 }
 
 p{
+    font-size: 16px;
+}
+
+.btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
     font-size: 16px;
 }
 
@@ -57,13 +67,13 @@ aside{
     
 }
 
-section{
+form{
     width: 70%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2% 10%;
+    flex-direction: column;
+    justify-content: space-between;  
+    padding: 2% 8%;
 }
 
 .sidebar_component{
@@ -97,23 +107,28 @@ section{
     color: var(--white);
 }
 
-section form{
+
+.form_step{
     height: 80%;
+    width: 100%;
+    border: 1px solid black;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
+
 
 .form_title_head{
     color: var(--marine-blue);
+    margin-top: 10%;
 }
 
 .form_title_para{
     color: var(--cool-gray);
 }
 
-section form div{
-    margin: 20px 0;
-}
-
-section form div p{
+section div p{
     color: var(--marine-blue);
 }
 
@@ -133,15 +148,16 @@ section form div p{
 
 .form_next_button_div{
     display: flex;
-    justify-content: end;
-    margin-top: 60px;
+    justify-content: flex-end;
 }
 
-.form_next_button_div button{
+.form_next{
     background-color: var(--marine-blue);
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    color: var(--light-gray);
+    color: var(--white);
+    width: var(--btn-width-desk);
+}
+.form_back{
+    background-color: transparent;
+    margin-right: calc(100% - 10.8em);
+    padding: 0;
 }
