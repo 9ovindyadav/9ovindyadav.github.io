@@ -11,4 +11,10 @@ projects = [
     source:
       "https://github.com/9ovindyadav/9ovindyadav.github.io/tree/main/gycodes",
   },
+  {
+    name: "TrekWorld",
+    view: "https://9ovindyadav.github.io/trekworld/",
+    source:
+      "https://github.com/9ovindyadav/9ovindyadav.github.io/tree/main/trekworld",
+  },
 ];
